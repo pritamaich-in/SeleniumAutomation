@@ -1,0 +1,15 @@
+l1=[1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786]
+l2=l1[::-1]
+myiter=iter(l2)
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
