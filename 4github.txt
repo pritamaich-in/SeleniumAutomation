@@ -1,0 +1,45 @@
+﻿class Solution:
+    def uniqueMorseRepresentations(self, words: List[str]) -> int:
+        l3 = []
+        for i in words:
+            l3.append(ordStr(i))
+        print(l3)
+        l4 = []
+        for i in l3:
+            l4.append(strBuild(i))
+        print(l4)
+        '''myDict = {}
+        for i in l4:
+            if i in myDict:
+                myDict[i]+=1
+            else:
+                myDict[i] = 1
+        print(myDict)
+        c = 0
+        for x,y in myDict.items():
+            if y == 1:
+                c+=1
+        print(c)'''
+        return len(set(l4))
+        
+                    
+def ordStr(S):
+    l =[]
+    for i in S:
+        l.append(ord(i)-97)
+    return l
+        
+def strBuild(l):
+    l1 =[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+    s = ""
+    for i in l:
+        s += l1[i]
+    print(l1[7])
+    print(l1[9])
+    print(l1[14])
+
+
+
+   return s
+
+
